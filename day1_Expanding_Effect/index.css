@@ -1,0 +1,43 @@
+body{
+    margin: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.expand{
+    padding: 6px;
+    position: relative;
+}
+.imgEffect{   
+    width: 6vw;
+    height: 500px;
+    border-radius: 4rem;
+    object-fit: cover;
+    cursor: pointer;  
+    transition: width 0.5s ease-in;  
+    
+}
+.imgEffect.imgExpand{
+    width: 60vw;
+    transition: width 0.5s ease-in;
+}
+
+@media screen and (max-width:576px){
+    .imgEffect{   
+        width: 8vw;
+    }
+    .imgExpand{
+        width: 70vw;
+    }
+    .expand:nth-of-type(4),
+    .expand:nth-of-type(5){
+        display: none;
+    }
+}
