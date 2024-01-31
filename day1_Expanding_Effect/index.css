@@ -6,19 +6,21 @@ body{
 }
 .container{
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
+    margin-top: 2rem;
     justify-content: center;
-}
-.expand{
-    padding: 6px;
-    position: relative;
+    gap: 6px;
 }
 .imgEffect{   
+    position: relative;
     width: 6vw;
     height: 500px;
     border-radius: 4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     object-fit: cover;
     cursor: pointer;  
     transition: width 0.5s ease-in;  
@@ -28,6 +30,19 @@ body{
     width: 60vw;
     transition: width 0.5s ease-in;
 }
+.caption{
+    position: absolute;
+    top: 86%;
+    left: 5%;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 2s ease; 
+}
+.captionDisplay{
+    opacity: 1;
+    visibility: visible;   
+}
 
 @media screen and (max-width:576px){
     .imgEffect{   
@@ -36,8 +51,11 @@ body{
     .imgExpand{
         width: 70vw;
     }
-    .expand:nth-of-type(4),
-    .expand:nth-of-type(5){
+    .imgEffect:nth-of-type(4),
+    .imgEffect:nth-of-type(5){
         display: none;
+    }
+    .caption{
+        left: 10%;
     }
 }
