@@ -68,10 +68,10 @@ header > h1{
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     width: 29.7vw;
-    height: 320px;
+    height: 280px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     cursor: pointer;
 }
 .cardTitle{

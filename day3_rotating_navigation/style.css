@@ -27,7 +27,7 @@ h2,h5{
     left: -100px;
 }
 .menu{
-    background-color: rgb(24, 70, 70);
+    background-color: rgb(97, 141, 141);
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -95,7 +95,8 @@ nav ul li + li + li{
     transform: translateX(-200%);
 }
 .content img{
-    max-width: 100%;
+    width: 97%;
+    border-radius: 10px;
 }
 .content{
     max-width: 1000px;
