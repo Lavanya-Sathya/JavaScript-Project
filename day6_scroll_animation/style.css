@@ -6,10 +6,16 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* overflow: hidden; */
+    /* height: 100vh; */
+    background-color: efefef;
+}
+h1{
+    margin: 10px;
 }
 .box{
     width: 400px;
-    height: 240px;
+    height: 200px;
     background-color: aquamarine;
     display: flex;
     justify-content: center;
@@ -23,6 +29,9 @@ body{
 
 .box:nth-of-type(even){
     transform: translateX(-400%);
+}
+.box.show{
+    transform: translateX(0);
 }
 .box h2{
     font-size: 45px;
