@@ -1,0 +1,56 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    font-size: 1.4rem;
+}
+.left-container{
+    background-image: linear-gradient(80deg,rgb(116, 167, 168),rgb(101, 175, 209),rgb(151, 82, 82));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+.right-container{
+    background-image: linear-gradient(60deg,rgb(111, 111, 194),rgb(78, 45, 141),rgb(206, 126, 175));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+button{
+    background-color: transparent;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    padding: 4px 10px;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    cursor: pointer;
+}
+button:hover{
+    border: 2px solid aliceblue;
+}
+@media screen and (max-width: 600px){
+    .container{
+        flex-direction: column;
+    }
+}
