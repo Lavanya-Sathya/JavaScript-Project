@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+.container{
+    height: 100vh;
+    background-color: rgb(16, 68, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+}
+form{
+    background-color: rgb(19, 126, 108);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 1rem;
+    width: 375px;
+}
+input{
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    color: aliceblue;
+    width: 100%;
+}
+#emailId,#passwordId{
+    position: relative;
+}
+input:focus{
+    outline: none;
+}
+button{
+    width: 100%;
+    padding: 10px ;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+button:hover{
+    color: rgb(27, 129, 129);
+}
+@media screen and (max-width:350px){
+    form{
+        padding: 0.5rem;
+    }
+}
