@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 body{
     margin: 0;
     padding: 0;
@@ -27,15 +30,20 @@ form{
     width: 375px;
 }
 input{
-    padding: 10px 0;
+    padding: 10px ;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid black;
     color: aliceblue;
     width: 100%;
 }
-#emailId,#passwordId{
+#form-control{
     position: relative;
+}
+label{
+    position: absolute;
+    top: 50%;
+    left: 10px
 }
 input:focus{
     outline: none;

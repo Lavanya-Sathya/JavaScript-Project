@@ -10,7 +10,7 @@ body{
     font-size: 1.4rem;
 }
 .left-container{
-    background-image: linear-gradient(80deg,rgb(116, 167, 168),rgb(101, 175, 209),rgb(151, 82, 82));
+    background-image: url("images/bg1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -24,7 +24,7 @@ body{
     cursor: pointer;
 }
 .right-container{
-    background-image: linear-gradient(60deg,rgb(111, 111, 194),rgb(78, 45, 141),rgb(206, 126, 175));
+    background-image: url("images/bg2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
