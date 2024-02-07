@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    height: 400px;
+    width: 350px;
+    border: 3px solid rgb(150, 118, 118);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0  0 1rem;
+}
+.btn,.stop{
+    background-color: rgb(131, 131, 182);
+    border: none;
+    margin: 1rem 0.5rem;
+    padding: 10px 20px ;
+    border-radius: 6px;
+    color: aliceblue;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn:hover{
+    border: 1px solid rgb(138, 198, 216);
+}
+h1{
+    text-align: center;
+}
+.stop{
+     background-color: rgb(207, 76, 87);
+}
+.stop:hover{
+    border: 1px solid rgb(151, 83, 89);
+}
